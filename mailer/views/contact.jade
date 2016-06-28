@@ -1,0 +1,13 @@
+extends layout
+
+block content
+  h1= title
+  form(name="login", action="/contact", method="post")
+      input(type="text", name="title",placeholder="title") 
+      <br />
+      input(type="email", name="email",placeholder="email") 
+      <br />
+      textarea(name="body",placeholder="message") 
+      <br />
+      input(type="submit", value="Send") 
+      <br />
